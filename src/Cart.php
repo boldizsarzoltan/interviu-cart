@@ -1,10 +1,12 @@
 <?php
+
 namespace Zoli\InterviuCart;
+
 class Cart
 {
     private CartItems $cartItems;
     private float $shippingCost;
-    private const int FREE_SHIPPING_MIN_VALUE = 200;
+    private const FREE_SHIPPING_MIN_VALUE = 200;
 
     public function __construct(CartItemSettings $cartItemSettings)
     {

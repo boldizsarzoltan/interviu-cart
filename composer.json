@@ -2,7 +2,8 @@
     "name": "zoli/interviu-cart",
     "autoload": {
         "psr-4": {
-            "Zoli\\InterviuCart\\": "src/"
+            "Zoli\\InterviuCart\\": "src/",
+            "Zoli\\InterviuCart\\Tests": "tests/"
         }
     },
     "authors": [
@@ -12,5 +13,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "phpstan/phpstan": "2.0.x-dev",
+        "phpunit/phpunit": "^11"
+    }
 }

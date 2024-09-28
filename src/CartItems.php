@@ -1,5 +1,10 @@
 <?php
+
 namespace Zoli\InterviuCart;
+
+/**
+ * @extends \ArrayObject<int,CartItem>
+ */
 class CartItems extends \ArrayObject
 {
     public function getTotal(): float
@@ -30,7 +35,7 @@ class CartItems extends \ArrayObject
     {
         /** @var CartItem $cartItem */
         foreach ($this as $cartItem) {
-            if($cartItem->productId === $newCartItem->productId) {
+            if ($cartItem->productId === $newCartItem->productId) {
                 $cartItem->addQuantity($newCartItem->quantity);
             }
         }

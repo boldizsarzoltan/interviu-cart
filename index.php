@@ -5,7 +5,6 @@ use Zoli\InterviuCart\CartItem;
 use Zoli\InterviuCart\CartItems;
 use Zoli\InterviuCart\CartItemSettings;
 
-
 $cart = new Cart(new CartItemSettings(15, new CartItems()));
 
 $cart->addItem(new CartItem(1, 1, 5));

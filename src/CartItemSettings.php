@@ -1,5 +1,7 @@
 <?php
+
 namespace Zoli\InterviuCart;
+
 class CartItemSettings
 {
     public function __construct(
