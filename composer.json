@@ -1,0 +1,16 @@
+{
+    "name": "zoli/interviu-cart",
+    "autoload": {
+        "psr-4": {
+            "Zoli\\InterviuCart\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "boldizsarzoltan",
+            "email": "boldizsar.zoltan3@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
