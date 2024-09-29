@@ -1,0 +1,1 @@
+docker build -f docker/Dockerfile -t interviu_cart . && docker run --rm interviu_cart
