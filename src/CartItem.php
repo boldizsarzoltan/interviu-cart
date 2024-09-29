@@ -6,9 +6,14 @@ class CartItem
 {
     public function __construct(
         public readonly int $productId,
-        public int $quantity,
-        public readonly int $price
+        private int $quantity,
+        public readonly int $unitPrice
     ) {
+    }
+
+    public function getQuantity(): int
+    {
+        return $this->quantity;
     }
 
     public function addQuantity(int $quantity): self
